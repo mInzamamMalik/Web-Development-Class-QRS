@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML5 Forms</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Bio Data</legend>
+
+            <label for="username"> Username: </label>
+            <input type="text" id="username" name="username" size="15" maxlength="30" />
+
+            <br>
+            <label for="password"> Password: </label>
+            <input required type="password" id="password" name="password" size="15" maxlength="30" />
+
+            <br>
+            <label for="comment"> Comments: </label>
+            <textarea id="comment" name="comments" cols="15" rows="5"></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Interests</legend>
+            <p>
+                Please select your favorite genre:
+                <br />
+                <input id="rock" type="radio" name="genre" value="rock" checked="checked" />
+                <label for="rock"> Rock</label>
+
+                <input id="pop" type="radio" name="genre" value="pop" />
+                <label for="pop"> Pop </label>
+
+                <input id="jazz" type="radio" name="genre" value="jazz" />
+                <label for="jazz"> Jazz</label>
+            </p>
+
+            <p>
+                Please select your favorite music service(s):
+                <br />
+
+                <input id="itunes" type="checkbox" name="service" value="itunes" />
+                <label for="itunes"> iTunes</label>
+
+                <input id="lastfm" type="checkbox" name="service" value="lastfm" />
+                <label for="lastfm"> Last.fm</label>
+
+                <input id="spotify" type="checkbox" name="service" value="spotify" checked="checked" />
+                <label for="spotify"> Spotify</label>
+
+            </p>
+
+            <p>What device do you listen to music on?</p>
+            <select name="devices" multiple>
+                <option value="record">record</option>
+                <option value="ipod" selected>iPod</option>
+                <option value="radio">Radio</option>
+                <option value="computer">Computer</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song" />
+
+
+        <br>
+        <br>
+        <br>
+        <!-- simple submit button -->
+        <!-- <input type="submit" label="signup"> -->
+        <button type="submit">signup</button>
+
+        <!-- image button for submit -->
+        <!-- <input type="image" src="./Saylani-logo.png" width="100" /> -->
+
+    </form>
+
+
+
+
+</body>
+
+</html>
