@@ -17,22 +17,23 @@
             <legend>Bio Data</legend>
 
             <label for="username"> Username: </label>
-            <input type="text" id="username" name="username" size="15" maxlength="30" />
+            <input type="email" placeholder="email or username" id="username" name="username" size="15"
+                maxlength="30" />
 
             <br>
             <label for="password"> Password: </label>
-            <input required type="password" id="password" name="password" size="15" maxlength="30" />
+            <input type="password" id="password" name="password" size="15" maxlength="30" />
 
             <br>
             <label for="comment"> Comments: </label>
-            <textarea id="comment" name="comments" cols="15" rows="5"></textarea>
+            <textarea placeholder="enter your comments" id="comment" name="comments" cols="15" rows="5"></textarea>
 
         </fieldset>
 
         <br>
 
         <fieldset>
-            <legend>Interests</legend>
+            <legend>Interests &lt;your&gt; </legend>
             <p>
                 Please select your favorite genre:
                 <br />
@@ -74,6 +75,8 @@
         <p>Upload your song in MP3 format:</p>
         <input type="file" name="user-song" />
 
+        <label for="depart">Departure date: </label>
+        <input id="depart" type="date" name="depart">
 
         <br>
         <br>
@@ -84,10 +87,20 @@
 
         <!-- image button for submit -->
         <!-- <input type="image" src="./Saylani-logo.png" width="100" /> -->
-
+    
     </form>
 
 
+
+
+
+    <iframe width="100%" height="350" src="http://maps.google.com/maps?q=Saylani+Welfare+Head+Office&amp;output=embed">
+    </iframe>
+
+    <iframe scrolling="no" width="100%" height="350" src="https://air.sysborg.com" frameborder="0"></iframe>
+
+    <!-- facebook and some other website don't allow to be opened in iframe -->
+    <iframe width="100%" height="350" src="https://www.facebook.com/MInzamamMalik/" frameborder="0"></iframe>
 
 
 </body>
